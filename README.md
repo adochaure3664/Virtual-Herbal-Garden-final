@@ -3,7 +3,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ed7c8f50-9e7d-4c38-b8d3-128030b0b1fc
+**URL**: https://herbal-garden-one.vercel.app/
 
 ## How can I edit this code?
 
