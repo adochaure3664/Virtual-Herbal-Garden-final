@@ -22,22 +22,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   subtitle,
 }) => {
   return (
-    <div className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* 🎬 Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/plantvideo.mp4" type="video/mp4" />
-      </video>
+    <div className="relative h-[80vh] flex items-center justify-center bg-gradient-to-b from-green-900 via-green-800 to-background">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
-      {/* 🌫 Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-background"></div>
-
-      {/* 🌿 Foreground Content */}
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         {/* Top Bar */}
         <div className="flex justify-between items-center mb-6">
@@ -66,10 +55,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
 
-        {/* Title & Subtitle */}
+        {/* Title Section */}
         <div className="flex flex-col items-center justify-center h-full mt-20">
           <div className="flex items-center gap-3 mb-4">
-            <Leaf className="h-12 w-12 text-green-400 animate-pulse" />
+            <Leaf className="h-12 w-12 text-green-400" />
             <h1 className="text-5xl font-bold">{title}</h1>
           </div>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
