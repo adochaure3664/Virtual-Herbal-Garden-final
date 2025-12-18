@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/plant.mp4" type="video/mp4" />
+        <source src="/plantvideo.mp4" type="video/mp4" />
       </video>
 
       {/* 🌫 Overlay */}
